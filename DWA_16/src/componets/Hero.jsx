@@ -12,27 +12,38 @@ import image30 from '../assets/image30.png'
 
 function Hero() {
   return (
-    <div className="hero">
-      <div className="hero-columnn hero-columnn-1">
-        <img src={image28} alt="" />
+    <div>
+      <div className="hero">
+        <div className="hero--columnn hero--columnn-1">
+          <img src={image28} alt="" />
+        </div>
+        <div className="hero--columnn hero--columnn-2">
+          <img src={image30} alt="" />
+          <img src={image26} alt="" />
+        </div>
+        <div className="hero--columnn hero--columnn-3">
+          <img src={image27} alt="" />
+          <img src={image29} alt="" />
+        </div>
+        <div className="hero--columnn hero--columnn-4">
+          <img src={image22} alt="" />
+          <img src={image23} alt="" />
+        </div>
+        <div className="hero--columnn hero--columnn-5">
+          <img src={image25} alt="" />
+          <img src={image24} alt="" />
+        </div>
       </div>
-      <div className="hero-columnn hero-columnn-2">
-        <img src={image30} alt="" />
-        <img src={image26} alt="" />
-      </div>
-      <div className="hero-columnn hero-columnn-3">
-        <img src={image27} alt="" />
-        <img src={image29} alt="" />
-      </div>
-      <div className="hero-columnn hero-columnn-4">
-        <img src={image22} alt="" />
-        <img src={image23} alt="" />
-      </div>
-      <div className="hero-columnn hero-columnn-5">
-        <img src={image25} alt="" />
-        <img src={image24} alt="" />
-      </div>
+
+      <section className="tagline">
+        <h1 className="tagline--title">Online Experiences</h1>
+        <p className="tagline--text">
+          Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.
+        </p>
+      </section>
+
     </div>
+
   )
 }
 
