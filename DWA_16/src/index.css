@@ -84,6 +84,19 @@ body {
 .card {
   width: 176px;
   font-size: 12px;
+  position: relative;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  border-radius: 2px;;
+  padding: 2px 4px;
+  background-color: white;
+
+  font-weight: bolder;
 }
 
 .card--image {

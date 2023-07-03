@@ -15,10 +15,22 @@ import data from '../data.js';
 export default function Card() {
 
   const experiences = data.map((experience) => {
-    const  {title, price, coverImg, stats: {rating}, stats: {reviewCount}, location} = experience;
+    const  {id, title, price, coverImg, stats: {rating}, stats: {reviewCount}, location, openSpots} = experience;
+
+    // Displaying SOLD OUT badge
+    let badgeText;
+    if (openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (location === "Online") {
+        badgeText = "ONLINE"
+    }
+      console.log(badgeText)
 
     return (
-      <div className='card'>
+
+      <div className='card' key={id}>
+        {badgeText && <div className='card--badge'>{badgeText}</div> }
+        
       <img src={coverImg} className='card--image'/>
       <div className='rating'>
         <img src={star} alt="" className='rating--star'/>
@@ -33,7 +45,7 @@ export default function Card() {
   })
   
     return (
-      <section>
+      <section className='experiences'>
         {experiences}
       </section>
     )
