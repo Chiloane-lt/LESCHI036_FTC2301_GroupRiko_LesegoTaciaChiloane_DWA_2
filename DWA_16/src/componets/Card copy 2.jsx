@@ -4,7 +4,7 @@ import star from '../assets/star.png';
 import data from '../data.js';
 
 /**
- * Justification for not doing it the SCRIMBA way.
+ * Justification for not doing it by adding information as props.
  * 1. Involves changes the code on the App file if any changes are made to
  *    the card. My way isolates changes to cards to the Cards.jsx file.
  * 2. Ensure App.jsx is more readeable.
