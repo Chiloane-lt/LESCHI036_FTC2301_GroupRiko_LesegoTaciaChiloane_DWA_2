@@ -50,6 +50,8 @@ body {
   'item1 item2'
   'item3 item3';
   gap: 1rem 2rem;
+  max-width: 600px;
+  margin: auto;
 }
 .generator--input {
   height: 2.1875rem;
