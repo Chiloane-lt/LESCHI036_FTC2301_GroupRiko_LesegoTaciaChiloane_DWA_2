@@ -4,7 +4,7 @@ import Data from '../memesData';
 
 export default function Content() {
 
-  const [ meme, setMeme ] = useState("");
+  const [ meme, setMeme ] = useState(getMeme());
 
   function getMeme() {
     const randomIndex = Math.floor(Math.random()*100);
