@@ -62,13 +62,23 @@ body {
 
   border-radius: 0.3125rem;
   border-style: none;
-  height: 2.5rem;
+  padding: 1em;
+  box-shadow: 0 2px #999;
 
   color: #FFF;
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.1rem;
+  cursor: pointer;
+}
+
+.generator--button:hover {
+  background: linear-gradient(135deg, #4a0b5f 0%, #7d12a0 100%);
+}
+.generator--button:active {
+  box-shadow: 0 .5px #666;
+  transform: translateY(4px);
 }
 
 /* MEME IMAGE */
