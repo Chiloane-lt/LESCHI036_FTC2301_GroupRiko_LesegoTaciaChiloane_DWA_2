@@ -71,32 +71,16 @@ body {
   letter-spacing: -0.1rem;
 }
 
+/* MEME IMAGE */
 
-
-/* .contentWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  height: 34.375rem;
-  padding-top: 6.31rem;
+.meme-container {
+display: flex;
+justify-content: center;
+margin: 2rem 0;
 }
 
-.input {
-  margin-bottom: 0.94rem;
+.meme-container-image {
+  margin: auto;
+  max-width: 70%;
+  max-height: 60vh;
 }
-
-.input--box {
-  height: 2.1875rem;
-  border-radius: 0.3125rem;
-  border: 1px solid #D5D4D8;
-}
-
-.genratorButton {
-  border-radius: 0.3125rem;
-  border-style: none;
-  height: 2.5rem;
-
-  width: 29.8125rem;
-
-} */
