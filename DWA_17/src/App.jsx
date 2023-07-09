@@ -1,17 +1,16 @@
-import { useState } from 'react'
-
-import Header from './components/Header'
-import Content from './components/Content'
-import './App.css'
+import React from 'react';
+import Header from './componets/Header';
+import Hero from './componets/Hero';
+import CardCarousel from './componets/Cards';
 
 function App() {
-
   return (
-    <>
+    <div>
       <Header />
-      <Content />
-    </>
+      <Hero />
+      <CardCarousel />
+    </div>
   )
 }
 
-export default App
+export default App;
