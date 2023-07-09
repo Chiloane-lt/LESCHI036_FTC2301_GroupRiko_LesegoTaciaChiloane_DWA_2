@@ -89,10 +89,25 @@ body {
 display: flex;
 justify-content: center;
 margin: 2rem 0;
+position: relative;
 }
 
 .meme-container-image {
   margin: auto;
   max-width: 70%;
   max-height: 60vh;
+}
+
+.meme-container-text {
+position: absolute;
+color: white;
+font-size: 2.5rem;
+}
+.text--top {
+  top: 5%;
+  bottom: 0;
+}
+
+.text--bottom{
+top: 85%;
 }

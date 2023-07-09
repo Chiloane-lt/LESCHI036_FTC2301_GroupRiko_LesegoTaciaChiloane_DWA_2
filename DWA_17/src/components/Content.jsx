@@ -29,6 +29,8 @@ export default function Content() {
       </div>
       <div className="meme-container">
         <img src={meme} className="meme-container-image"/>
+        <h1 className="meme-container-text text--top">Top Text</h1>
+        <h1 className="meme-container-text text--bottom">Bottom Text</h1>
       </div>
     </div>
   )
