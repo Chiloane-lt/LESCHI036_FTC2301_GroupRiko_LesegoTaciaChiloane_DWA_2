@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Karla;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(0deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
+  color: white;
+  padding: 0 2rem;
+}
+
+.header--branding {
+  display: flex;
+}
+
+.header--branding-logo {
+  width: 2rem;
+  margin-right: .5rem;
+}
+
+/* CONTENT */
+
+.ContentGenerator {
+  position: relative;
+  top: 65px;
+  margin: 2rem;
+}
+
+.input-top {grid-area: item1;}
+.input-bottom {grid-area: item2;}
+.generator--button {grid-area: item3;}
+
+.generator {
+  display: grid;
+  grid-template-areas: 
+  'item1 item2'
+  'item3 item3';
+  gap: 1rem 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+.generator--input {
+  height: 2.1875rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #D5D4D8;
+  text-indent: 2rem;
+}
+
+.generator--button {
+  background: linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
+
+  border-radius: 0.3125rem;
+  border-style: none;
+  padding: 1em;
+  box-shadow: 0 3px #969595;
+
+  color: #FFF;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  cursor: pointer;
+}
+
+.generator--button:hover {
+  background: linear-gradient(135deg, #4a0b5f 0%, #7d12a0 100%);
+}
+.generator--button:active {
+  box-shadow: 0 .5px #666;
+  transform: translateY(4px);
+}
+
+/* MEME IMAGE */
+
+.meme-container {
+display: flex;
+justify-content: center;
+margin: 2rem 0;
+position: relative;
+}
+
+.meme-container-image {
+  margin: auto;
+  max-width: 70%;
+  max-height: 60vh;
+}
+
+.meme-container-text {
+position: absolute;
+color: white;
+text-transform: uppercase;
+text-shadow:
+2px 2px 0 #000,
+-2px -2px 0 #000,
+2px -2px 0 #000,
+-2px 2px 0 #000,
+0 2px 0 #000,
+2px 0 0 #000,
+0 -2px 0 #000,
+-2px 0 0 #000,
+2px 2px 5px #000;
+font-weight: 900;
+font-size: 2.5em;
+}
+.text--top {
+  top: 5%;
+  bottom: 0;
+}
+
+.text--bottom{
+top: 80%;
+}
