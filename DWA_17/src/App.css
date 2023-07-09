@@ -57,6 +57,7 @@ body {
   height: 2.1875rem;
   border-radius: 0.3125rem;
   border: 1px solid #D5D4D8;
+  text-indent: 2rem;
 }
 
 .generator--button {
