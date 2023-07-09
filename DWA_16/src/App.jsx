@@ -1,16 +1,13 @@
-import React from 'react';
-import Header from './componets/Header';
-import Hero from './componets/Hero';
-import CardCarousel from './componets/Cards';
+import Navbar from './components/Navbar';
+import Main from './components/Main';
 
 function App() {
-  return (
-    <div>
-      <Header />
-      <Hero />
-      <CardCarousel />
-    </div>
-  )
+    return (
+        <div>
+            <Navbar />
+            <Main />
+        </div>
+    )
 }
 
-export default App;
+export default App
